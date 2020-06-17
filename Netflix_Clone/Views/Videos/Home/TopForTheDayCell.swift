@@ -81,6 +81,8 @@ class TopForTheDayCell : CollectionBaseCell {
         btnInfo.addAnchor(left: nil, nil, right: self.trailingAnchor, 50, w: 60, h: 60)
         btnInfo.centerYAnchor.constraint(equalTo: btnPlay.centerYAnchor).isActive = true
         btnPlay.addTarget(self, action: #selector(onTapPlay(_:)), for: .touchUpInside)
+        btnInfo.addTarget(self, action: #selector(onTapPlay(_:)), for: .touchUpInside)
+        btnAddToList.addTarget(self, action: #selector(onTapPlay(_:)), for: .touchUpInside)
 
     }
     

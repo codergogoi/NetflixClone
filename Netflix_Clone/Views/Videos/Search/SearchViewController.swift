@@ -70,7 +70,7 @@ class SearchViewController: UIViewController {
         
         func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
             
-            return CGSize(width: collectionView.bounds.size.width, height: 120)
+            return CGSize(width: collectionView.bounds.size.width, height: 80)
         }
         
     }

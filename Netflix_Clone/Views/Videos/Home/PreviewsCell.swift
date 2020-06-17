@@ -26,7 +26,7 @@ class PreviewThumbCell: CollectionBaseCell {
         self.addSubview(lblTitle)
         self.imgThumb.addAnchor(left: self.leadingAnchor, 20, right: self.trailingAnchor, 20, top: self.topAnchor, 20, bottom: self.bottomAnchor, 20)
         self.imgThumb.layer.cornerRadius = (self.frame.size.width - 40) / 2
-        self.imgThumb.layer.borderColor = UIColor.randomColor(0.5).cgColor
+        self.imgThumb.layer.borderColor = UIColor.randomColor().cgColor
         self.imgThumb.layer.borderWidth = 3
         self.lblTitle.addCenterAnchor(centerX: self.centerXAnchor, bottom: self.bottomAnchor, 5)
         

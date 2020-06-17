@@ -13,8 +13,7 @@ class HomeViewController: UIViewController {
     
     let viewModel = HomeViewModel()
     
-    let topNavbar = View()
-    
+    let topNavbar = HomeTopNav()
     
     let collectionView: UICollectionView = {
         let layout = UICollectionViewFlowLayout()
@@ -37,10 +36,9 @@ class HomeViewController: UIViewController {
     }
     
     private func setupViews(){
-        
-        topNavbar.backgroundColor = .rgba(r: 0, g: 0, b: 0, a: 0.5)
-        self.view.addSubview(topNavbar)
         self.view.addSubview(collectionView)
+        self.view.addSubview(topNavbar)
+
         collectionView.register(TopForTheDayCell.self, forCellWithReuseIdentifier: identifierTopForTheDay)
         collectionView.register(PreviewsCell.self, forCellWithReuseIdentifier: identifierPreview)
         collectionView.register(ListedVideoCell.self, forCellWithReuseIdentifier: identifierListed)
@@ -49,7 +47,7 @@ class HomeViewController: UIViewController {
         collectionView.delegate = self
         collectionView.dataSource = self
         
-        topNavbar.addAnchor(left: self.view.leadingAnchor, nil, right: self.view.trailingAnchor, nil, top: self.view.topAnchor, nil, bottom: nil, nil, w: nil, h: 100)
+        topNavbar.addAnchor(left: self.view.leadingAnchor, right: self.view.trailingAnchor, top: self.view.topAnchor, 20,h: 73)
         collectionView.addAnchor(left: self.view.leadingAnchor, nil, right: self.view.trailingAnchor, nil, top: self.view.topAnchor, 0, bottom: self.view.bottomAnchor, 10)
     }
     

@@ -14,12 +14,16 @@ class View: UIView {
         super.init(frame: frame)
         backgroundColor = .white
         noAutoConst()
+        self.setupViews()
     }
     
     required init?(coder: NSCoder) {
         super.init(coder: coder)
     }
     
+    func setupViews(){
+        
+    }
   
     
 }

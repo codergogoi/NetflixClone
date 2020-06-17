@@ -30,6 +30,7 @@
 		5D531F4B24754EDC006E5D20 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D531F4A24754EDC006E5D20 /* LoginViewController.swift */; };
 		5D531F4D24755040006E5D20 /* TextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D531F4C24755040006E5D20 /* TextField.swift */; };
 		5D6BF6022499FA520099B7F9 /* SearchVideoCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D6BF6012499FA520099B7F9 /* SearchVideoCell.swift */; };
+		5D6BF6042499FF2A0099B7F9 /* HomeTopNav.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D6BF6032499FF2A0099B7F9 /* HomeTopNav.swift */; };
 		5DD3C19B247543E200A950A0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DD3C19A247543E200A950A0 /* AppDelegate.swift */; };
 		5DD3C19F247543E200A950A0 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DD3C19E247543E200A950A0 /* ViewController.swift */; };
 		5DD3C1A4247543E400A950A0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5DD3C1A3247543E400A950A0 /* Assets.xcassets */; };
@@ -95,6 +96,7 @@
 		5D531F4A24754EDC006E5D20 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		5D531F4C24755040006E5D20 /* TextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextField.swift; sourceTree = "<group>"; };
 		5D6BF6012499FA520099B7F9 /* SearchVideoCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchVideoCell.swift; sourceTree = "<group>"; };
+		5D6BF6032499FF2A0099B7F9 /* HomeTopNav.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeTopNav.swift; sourceTree = "<group>"; };
 		5DD3C197247543E200A950A0 /* Netflix_Clone.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Netflix_Clone.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5DD3C19A247543E200A950A0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		5DD3C19E247543E200A950A0 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -210,6 +212,7 @@
 				5DED2C252498A244000BB2EB /* PreviewsCell.swift */,
 				5DED2C272498A289000BB2EB /* ListedVidesCell.swift */,
 				5DED2C292498A2D5000BB2EB /* OriginalVideosCell.swift */,
+				5D6BF6032499FF2A0099B7F9 /* HomeTopNav.swift */,
 			);
 			path = Home;
 			sourceTree = "<group>";
@@ -639,6 +642,7 @@
 				5DD3C1D92475446D00A950A0 /* UtilityExtensions.swift in Sources */,
 				5D531F4B24754EDC006E5D20 /* LoginViewController.swift in Sources */,
 				5DD3C1CC2475442600A950A0 /* VideoPlayerView.swift in Sources */,
+				5D6BF6042499FF2A0099B7F9 /* HomeTopNav.swift in Sources */,
 				5DED2C2A2498A2D5000BB2EB /* OriginalVideosCell.swift in Sources */,
 				5D4752262497297400DAA7DA /* ProfileCard.swift in Sources */,
 				5D00EB14247B81A500F3ED82 /* LandingFeature.swift in Sources */,
