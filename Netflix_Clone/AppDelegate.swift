@@ -23,8 +23,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         
         let rootViewController = UINavigationController(rootViewController: landingViewController)
         window?.rootViewController = rootViewController
-        
-        
+                
         return true
     }
 

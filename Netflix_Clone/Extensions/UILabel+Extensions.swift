@@ -16,6 +16,18 @@ class Label: UILabel{
             self.lineBreakMode = .byWordWrapping
             self.numberOfLines = 0
        }
+    
+    init(title: String, _ color: UIColor = .black,_ font: UIFont = .appFont(fSize: 16)) {
+        super.init(frame: CGRect.zero)
+        self.noAutoConst()
+        self.lineBreakMode = .byWordWrapping
+        self.numberOfLines = 0
+        self.text = title
+        self.font = font
+        self.textColor = color
+        self.textAlignment = .center
+        
+    }
        
        required init?(coder: NSCoder) {
            super.init(coder: coder)

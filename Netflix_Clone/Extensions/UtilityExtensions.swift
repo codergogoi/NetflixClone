@@ -27,7 +27,7 @@ extension NSAttributedString{
 extension UIView{
     
     
-    func addAnchor(left: NSLayoutXAxisAnchor?, _ leftSpacing: CGFloat?, right: NSLayoutXAxisAnchor?, _ rightSpacing: CGFloat?, top: NSLayoutYAxisAnchor?, _ topSpacing: CGFloat?, bottom: NSLayoutYAxisAnchor?, _ bottomSpacing: CGFloat?, w: CGFloat? = nil, h: CGFloat? = nil) {
+    func addAnchor(left: NSLayoutXAxisAnchor? = nil, _ leftSpacing: CGFloat? = nil, right: NSLayoutXAxisAnchor? = nil, _ rightSpacing: CGFloat? = nil, top: NSLayoutYAxisAnchor? = nil, _ topSpacing: CGFloat? = nil, bottom: NSLayoutYAxisAnchor? = nil, _ bottomSpacing: CGFloat? = nil, w: CGFloat? = nil, h: CGFloat? = nil) {
         
         if let leftAnchor = left {
             self.leadingAnchor.constraint(equalTo: leftAnchor, constant: leftSpacing ?? 0).isActive = true
@@ -62,7 +62,7 @@ extension UIView{
         
     }
     
-    func addCenterAnchor(centerX: NSLayoutXAxisAnchor?, centerY: NSLayoutYAxisAnchor?, top: NSLayoutYAxisAnchor?, _ topSpacing: CGFloat?, bottom: NSLayoutYAxisAnchor?, _ bottomSpacing: CGFloat?, w: CGFloat? = nil, h: CGFloat? = nil) {
+    func addCenterAnchor(centerX: NSLayoutXAxisAnchor? = nil, centerY: NSLayoutYAxisAnchor? = nil, top: NSLayoutYAxisAnchor? = nil, _ topSpacing: CGFloat? = nil, bottom: NSLayoutYAxisAnchor? = nil, _ bottomSpacing: CGFloat? = nil, w: CGFloat? = nil, h: CGFloat? = nil) {
         
         if let centerY = centerY {
             self.centerYAnchor.constraint(equalTo: centerY).isActive = true
@@ -441,13 +441,13 @@ extension UIColor{
        }
        
     
-     class func randomColor()->UIColor {
+    class func randomColor(_ alpha: CGFloat = 1)->UIColor {
            
            let r = Float(arc4random_uniform(255))
            let g = Float(arc4random_uniform(255))
            let b = Float(arc4random_uniform(255))
            
-           return UIColor(red: CGFloat(r/255), green: CGFloat(g/255), blue: CGFloat(b/255), alpha: 1)
+           return UIColor(red: CGFloat(r/255), green: CGFloat(g/255), blue: CGFloat(b/255), alpha: alpha)
        }
 }
 

@@ -17,6 +17,7 @@ class ImageView: UIImageView {
     
     override init(image: UIImage?) {
         super.init(image: image)
+        setupViews()
     }
     
     required init?(coder: NSCoder) {
@@ -24,7 +25,7 @@ class ImageView: UIImageView {
     }
     
     func setupViews(){
-        self.contentMode = .scaleAspectFit
+        self.contentMode = .scaleAspectFill
         self.noAutoConst()
     }
     
