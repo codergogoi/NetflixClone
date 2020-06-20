@@ -13,8 +13,7 @@ class SearchViewController: UIViewController {
    
         let viewModel = HomeViewModel()
         
-        let topNavbar = View()
-        
+        let searchBar = SearchBarView()
         
         let collectionView: UICollectionView = {
             let layout = UICollectionViewFlowLayout()
@@ -30,23 +29,31 @@ class SearchViewController: UIViewController {
         override func viewDidLoad() {
             super.viewDidLoad()
             setupViews()
+            self.searchBar.txtSearch.becomeFirstResponder()
         }
         
         private func setupViews(){
             
-            topNavbar.backgroundColor = .rgba(r: 0, g: 0, b: 0, a: 0.5)
-            self.view.addSubview(topNavbar)
+            searchBar.backgroundColor = .rgba(r: 0, g: 0, b: 0, a: 0.5)
+            self.view.addSubview(searchBar)
+            
+            searchBar.onChangeText = {[weak self] txt in
+                print("Entered \(txt)")
+            }
+            
             self.view.addSubview(collectionView)
             collectionView.register(SearchVideoCell.self, forCellWithReuseIdentifier: identifier)
             
             collectionView.delegate = self
             collectionView.dataSource = self
             
-            topNavbar.addAnchor(left: self.view.leadingAnchor, right: self.view.trailingAnchor, top: self.view.topAnchor, h: 83)
-            collectionView.addAnchor(left: self.view.leadingAnchor,  right: self.view.trailingAnchor, top: self.topNavbar.bottomAnchor, 20, bottom: self.view.bottomAnchor, 10)
+            searchBar.addAnchor(left: self.view.leadingAnchor, right: self.view.trailingAnchor, top: self.view.topAnchor, 44,h: 40)
+            collectionView.addAnchor(left: self.view.leadingAnchor,  right: self.view.trailingAnchor, top: self.searchBar.bottomAnchor, 20, bottom: self.view.bottomAnchor, 10)
         }
         
     }
+
+
 
     //MARK: - Collection View Functionality
 

@@ -59,7 +59,7 @@ class LandingViewController: UIViewController {
     @objc func onTapLogin(){
         let loginView = LoginViewController()
         self.navigationController?.pushViewController(loginView, animated: true)
-        
+//
 //        let videosViewController = VideosViewController()
 //        videosViewController.modalPresentationStyle = .overFullScreen
 //        self.present(videosViewController, animated: true, completion: nil)

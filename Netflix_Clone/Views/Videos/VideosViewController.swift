@@ -23,7 +23,7 @@ class VideosViewController: UITabBarController {
             addNavigationCongtroller(vc: HomeViewController(), title: "Home", icon: #imageLiteral(resourceName: "tb_home")) ,
             addNavigationCongtroller(vc: SearchViewController(), title: "Search", icon: #imageLiteral(resourceName: "tb_search")) ,
             addNavigationCongtroller(vc: ComingSoonViewController(), title: "Coming Soon", icon: #imageLiteral(resourceName: "tb_coming_soon")) ,
-            addNavigationCongtroller(vc: DownloadsViewController(), title: "Download", icon: #imageLiteral(resourceName: "tb_download")) ,
+            addNavigationCongtroller(vc: DownloadsViewController(), title: "Downloads", icon: #imageLiteral(resourceName: "tb_download")) ,
             addNavigationCongtroller(vc: MoreViewController(), title: "More", icon: #imageLiteral(resourceName: "tb_more"))
         ]
         

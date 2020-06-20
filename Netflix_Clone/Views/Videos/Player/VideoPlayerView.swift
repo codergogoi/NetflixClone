@@ -178,13 +178,13 @@ class VideoPlayerView: UIView {
         
         
         let headers: [String: String] = [
-            "Cookie": "signature=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiJhdWRpZW5jZSIsInBsYXRmb3JtIjoid2ViIiwiaWF0IjoxNTg4NjU0ODAwLCJleHAiOjE1ODg3Mzc2MDB9.KUT8-L9pypHqEHHDzzd6xxBhaqeiqQTJnks1DPwGHgI"
-        ]
-        
-        //        let movieUrl = URL(string: "https://limitless-beyond-35588.herokuapp.com/watch/movie/5eae5aee5d1c0211549a35e2")
+                  "Cookie": "signature=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI1ZWM0ZGJmMDA1ZmJjMzBkZTBiYmYzYjUiLCJlbWFpbCI6InRlc3RAdGVzdC5jb20iLCJpYXQiOjE1OTI2MzkyNTIsImV4cCI6MTYwMDQxNTI1Mn0.cQMOtMAiylR1mc_fQwH3RXCmBPnkupk33rGZSbmLfmY",
+                  "Authorization": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI1ZWM0ZGJmMDA1ZmJjMzBkZTBiYmYzYjUiLCJlbWFpbCI6InRlc3RAdGVzdC5jb20iLCJpYXQiOjE1OTI2MzkyNTIsImV4cCI6MTYwMDQxNTI1Mn0.cQMOtMAiylR1mc_fQwH3RXCmBPnkupk33rGZSbmLfmY"
+              ]
 
+       
         
-        let movieUrl = URL(string: "http://localhost:8000/watch/movie/5eae5aee5d1c0211549a35e2")
+        let movieUrl = URL(string: "http://localhost:8000/watch/movie/5ebfe470a7195425c5964625")
         
         
         if let url = movieUrl{

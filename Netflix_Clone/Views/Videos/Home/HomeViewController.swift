@@ -35,6 +35,10 @@ class HomeViewController: UIViewController {
         setupViews()
     }
     
+    override func viewDidAppear(_ animated: Bool) {
+        super.viewDidAppear(animated)
+    }
+    
     private func setupViews(){
         self.view.addSubview(collectionView)
         self.view.addSubview(topNavbar)
@@ -103,7 +107,8 @@ extension HomeViewController {
     
     fileprivate func onTapPlay() {
         
-        print("Playing....")
+        let appPlayer = AppPlayer()
+        self.present(appPlayer, animated: true, completion: nil)
     }
     
 }

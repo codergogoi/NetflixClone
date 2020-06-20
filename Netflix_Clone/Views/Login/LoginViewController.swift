@@ -75,6 +75,7 @@ class LoginViewController: UIViewController {
     @objc func onTapLogin() {
         let profileViewController = ProfileSelectionViewController()
         self.navigationController?.pushViewController(profileViewController, animated: true)
+        
     }
     
     @objc func onTapBackToHome(){

@@ -16,9 +16,9 @@ class AppPlayer: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-//        let value = UIInterfaceOrientation.landscapeRight.rawValue
-//              UIDevice.current.setValue(value, forKey: "orientation")
-//        
+        let value = UIInterfaceOrientation.landscapeRight.rawValue
+              UIDevice.current.setValue(value, forKey: "orientation")
+        
         self.view.backgroundColor = .init(white: 0.9, alpha: 1)
                 let videoPlayer = VideoPlayerView()
                 videoPlayer.isUserInteractionEnabled = true

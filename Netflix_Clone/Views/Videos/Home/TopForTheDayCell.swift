@@ -41,8 +41,8 @@ class TopForTheDayCell : CollectionBaseCell {
         return btn
     }()
 
-    let btnPlay: IconButtonVertical = {
-        let btn = IconButtonVertical()
+    let btnPlay: IconButtonHorizontal = {
+        let btn = IconButtonHorizontal()
         btn.lblTitle.text = "Play"
         btn.icon.image = #imageLiteral(resourceName: "play_black")
         return btn

@@ -80,7 +80,7 @@ class IconButton: UIButton {
 }
 
 
-class IconButtonVertical: UIButton {
+class IconButtonHorizontal: UIButton {
     
     let lblTitle = Label()
     let icon = ImageView(image: #imageLiteral(resourceName: "add_profile"))
